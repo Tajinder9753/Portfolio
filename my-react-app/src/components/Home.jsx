@@ -1,10 +1,14 @@
-// export default function Home() {
-//       return <p>Hello World!</p>
-//      }
-    
-//Home.jsx Tajinder Nijjar, 301059291, Sept 22nd 2024
+    //Home.jsx Tajinder Nijjar, 301059291, Sept 22nd 2024
+    import '../Home.css';
 const Home = () => {
-    return <p>Welcome to my portfolio!</p>;
+    return <>
+        
+        <div id = "intro">
+            <h2>Hello,</h2>
+            <h2>I am <span className = "introName">Tajinder Nijjar</span></h2>
+        </div>
+     
+    </> 
     
 };
 

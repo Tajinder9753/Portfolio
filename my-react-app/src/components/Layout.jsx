@@ -1,17 +1,19 @@
-import { Link } from 'react-router-dom';
 //Layout.jsx Tajinder Nijjar, 301059291, Sept 22nd 2024
+import { Link } from 'react-router-dom';
+import './Layout.css';
 export default function Layout() {
     return (
         <>
-        <h1>My Portfolio</h1>
-        <nav>
-            <Link to= "/">Home</Link> |
-            <Link to= "/About">About</Link> |
-            <Link to= "/Project">Project</Link> |
-            <Link to= "/Services">Services</Link> |
-            <Link to= "/Contact">Contact</Link>
+        <nav className = "navbar">
+            <h1>Tajinder's Portfolio</h1> 
+            <div className = "navMenu">
+                <Link className = "navMenuItem" to= "/">Home</Link> 
+                <Link className = "navMenuItem" to= "/About">About</Link> 
+                <Link className = "navMenuItem" to= "/Project">Project</Link> 
+                <Link className = "navMenuItem" to= "/Services">Services</Link> 
+                <Link className = "navMenuItem" to= "/Contact">Contact</Link>
+            </div>
         </nav>
-        <br/> <br/>
         <hr />
         </>
     );

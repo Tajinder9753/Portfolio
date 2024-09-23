@@ -1,0 +1,8 @@
+.introName {
+    color:red;
+}
+#intro {
+    display:flex;
+    flex-direction: column;
+    
+}

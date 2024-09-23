@@ -1,0 +1,21 @@
+.navbar {
+    height: 5rem;
+    width: 100vw;
+    
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    display:flex;
+    align-items: center;
+    
+    position:sticky;
+    top:0;
+    z-index: 1;
+}
+
+.navMenu {
+    margin-left:3rem;
+}
+
+.navMenuItem {
+    margin:1rem;
+}

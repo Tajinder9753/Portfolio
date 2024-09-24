@@ -1,3 +1,4 @@
+/* Layout.css Tajinder Nijjar, 301059291, Sept 22nd 2024 */
 .navbar {
     height: 5rem;
     width: 100vw;
@@ -18,4 +19,10 @@
 
 .navMenuItem {
     margin:1rem;
+} 
+
+.logo {
+    object-fit: cover;
+    height: 6rem;
+    width: 6rem;
 }

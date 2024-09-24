@@ -22,10 +22,13 @@
  
   body {
    margin: 0;
-  
+   overflow:hidden;
+   overflow-y: scroll;
    place-items: center;
    min-width: 320px;
    min-height: 100vh;
+   background-color: rgb(30,30,30);
+   color:white;
   }
   h1 {
    font-size: 3.2em;

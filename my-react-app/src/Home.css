@@ -1,8 +1,46 @@
+/* Home.css Tajinder Nijjar, 301059291, Sept 22nd 2024 */
 .introName {
     color:red;
 }
 #intro {
-    display:flex;
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    z-index: 0;
+    position: relative;
+}
+
+.profile {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height:30vh;
+    margin-top:10rem;
+}
+
+.btn{
+    background-color: red;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.hello{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.para{
+    font-size: 1.5rem;
+    font-weight: 300;
 }

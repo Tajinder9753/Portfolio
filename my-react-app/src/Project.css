@@ -23,6 +23,7 @@
 
 .projectImgs{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width:100vw;
@@ -32,6 +33,12 @@
 
 .ImgProject{
     object-fit: cover;
-    height: 20rem;
-    margin: 0.5rem;
+    height: 50rem;
+    margin: 1rem;
+}
+
+@media screen and (max-width:585px){
+    .ImgProject{
+        height:48vw;
+    }
 }

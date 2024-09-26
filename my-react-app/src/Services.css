@@ -1,0 +1,43 @@
+/* Services.css Tajinder Nijjar, 301059291, Sept 22nd 2024 */
+.services{
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+#serviceTitle{
+    font-size: 3rem;
+    font-weight: 2rem;
+}
+
+.serviceList{
+    list-style: none;
+    margin: 10px 0;
+}
+
+#serviceItem{
+    margin:2rem;
+    font-size: 1.5rem;
+}
+
+.pictures{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    max-width: 65rem;
+}
+
+#serviceImages{
+    object-fit: cover;
+    margin: 1rem;
+}

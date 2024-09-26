@@ -17,7 +17,6 @@ export default function Layout() {
                 <Link className = "navMenuItem" to= "/Contact">Contact</Link>
             </div>
         </nav>
-        <hr />
         </>
     );
 }

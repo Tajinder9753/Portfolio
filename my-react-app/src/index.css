@@ -5,7 +5,7 @@
    font-weight: 400;
    color-scheme: light dark;
    color: rgba(255, 255, 255, 0.87);
-   background-color: #242424;
+   background-color: #222831;
    font-synthesis: none;
    text-rendering: optimizeLegibility;
    -webkit-font-smoothing: antialiased;
@@ -13,7 +13,7 @@
   }
   a {
    font-weight: 500;
-   color: #646cff;
+   color: #8dc6ff;
    text-decoration: inherit;
   }
   a:hover {
@@ -27,7 +27,7 @@
    place-items: center;
    min-width: 320px;
    min-height: 100vh;
-   background-color: rgb(30,30,30);
+   background-color: #222831;
    color:white;
   }
   h1 {

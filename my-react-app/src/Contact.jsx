@@ -8,7 +8,7 @@ export default function Contact() {
                 <span className="contactDescription">Please fill out the form below to discuss
                     any work opportunities.
                 </span>
-                <form className="contactForm">
+                <form  action = '/' className="contactForm">
                     <input type="text" className="name" placeholder='First Name'/>
                     <input type="text" className="name" placeholder='Last Name'/>
                     <input type="email" className="email" placeholder='Email'/>

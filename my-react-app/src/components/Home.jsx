@@ -1,7 +1,7 @@
     //Home.jsx Tajinder Nijjar, 301059291, Sept 22nd 2024
     import '../Home.css';
     import { Link } from 'react-router-dom';
-    import bg from '../assets/homeImage.png';
+    import bg from '../assets/homeImage.jpg';
 const Home = () => {
     return <>
     <section id = 'intro'>

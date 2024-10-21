@@ -22,7 +22,7 @@ const UserSchema = new mongoose.Schema({
         type:Date,
         default:Date.now
     },
-    hashed_passwords:
+    hashed_password:
     {
         type:String,
         required:'Password is required'
@@ -32,7 +32,7 @@ const UserSchema = new mongoose.Schema({
 UserSchema.virtual('password')
 .set(function(password){
     this._password = password;
-    this.hashed_passwords = password;
+    this.hashed_password = password;
 })
 .get(function(){
     return this._password;

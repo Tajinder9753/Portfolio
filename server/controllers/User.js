@@ -1,17 +1,18 @@
 const User = require('../models/User.js');
 
 const create = async(req,res) => {
+    console.log("request received at /api/users POST");
     const user = new User(req.body)
     try{
         await user.save()
         return res.status(200).json({
             message:"Added Successfully"
-        })
+        });
     }
     catch(err)
     {
-        return res.send(400).json({
-            error:"Error Message"
+        return res.status(400).json({
+            error:"Error in creating user"
         })
     }
 }
@@ -22,8 +23,8 @@ const list = async(req,res)=>{
         res.json(users);
     }
     catch(err){
-        return res.send(400).json({
-            error:"Error Message"
+        return res.status(400).json({
+            error:"Error in receiving list"
         })
     }
 }
@@ -39,8 +40,8 @@ const userByID = async(req,res,next,id)=>{
     next()
     }
     catch(err){
-        return res.send(400).json({
-            error:"Error Message"
+        return res.status(400).json({
+            error:"Error in getting user by ID"
         })
     }
 }
@@ -62,8 +63,8 @@ const update = async(req,res) => {
     }
     catch(err)
     {
-    return res.send(400).json({
-            rror:"Error Message"
+    return res.status(400).json({
+            error:"Error in updating"
         })   
     }
 }
@@ -78,7 +79,7 @@ const remove = async(req,res) => {
     catch(err)
     {
     return res.send(400).json({
-            rror:"Error Message"
+            error:"Error in removing"
         })   
     }
 }

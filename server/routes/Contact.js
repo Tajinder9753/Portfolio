@@ -1,0 +1,11 @@
+const express = require('express')
+const contactCntrl = require('../controllers/Contact.js')
+const router = express.Router()
+router.route('/contacts').post(contactCntrl.create)
+router.route('/contacts').get(contactCntrl.list)
+router.param('userId',contactCntrl.contactByID)
+router.route('/contacts/:userId').get(contactCntrl.read)
+router.route('/contacts/:userId').put(contactCntrl.update)
+router.route('/contacts/:userId').delete(contactCntrl.remove)
+router.route('/contacts/').delete(contactCntrl.removeAll)
+module.exports = router;

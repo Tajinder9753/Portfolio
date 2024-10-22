@@ -52,9 +52,10 @@ const read = (req,res) =>{
     return res.json(req.profile)
 }
 const update = async(req,res) => {
+    console.log("request received at /api/users PUT");
     try{
         let user = req.profile
-        user = extend(user,req.body)
+        user = Object.assign(user, req.body)
         user.updated = Date.now()
         await user.save()
         user.hashed_password = undefined
@@ -83,4 +84,20 @@ const remove = async(req,res) => {
         })   
     }
 }
-module.exports = {create, userByID,read,list,remove,update}
+
+const removeAll = async (req, res) =>
+{
+    try {
+        await User.deleteMany({});
+        res.status(200).json({
+            message: "All users have been deleted"
+        })
+    }
+    catch (err)
+    {
+        return res.status(400).json({
+            error: "could not delete users"
+        })
+    }
+};
+module.exports = {create, userByID,read,list,remove,update, removeAll}

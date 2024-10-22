@@ -9,6 +9,7 @@ const bodyParser = require('body-parser');
 const assetsRouter = require("./asset-router");
 const app = express()
 const userRoutes = require('./routes/User.js');
+const contactsRoutes = require('./routes/Contact.js');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 // Server static file
@@ -28,6 +29,8 @@ app.use(helmet())
 app.use(cors())
 
 app.use('/api', userRoutes);
+
+app.use('/api', contactsRoutes);
 
 app.use("/",express.static(path.join(__dirname,"public")));
 
